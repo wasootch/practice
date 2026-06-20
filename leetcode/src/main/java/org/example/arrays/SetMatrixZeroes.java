@@ -35,10 +35,14 @@ public class SetMatrixZeroes {
         boolean colZeroZeroed = false;
         boolean rowZeroZeroed = false;
         for (int i = 0; i < row; i++) {
-            if (matrix[i][0] == 0) colZeroZeroed = true;
+            if (matrix[i][0] == 0) {
+                colZeroZeroed = true;
+            }
             for (int j = 0; j < col; j++) {
                 if (matrix[i][j] == 0) {
-                    if (i == 0) rowZeroZeroed = true;
+                    if (i == 0) {
+                        rowZeroZeroed = true;
+                    }
                     matrix[i][0] = 0;
                     matrix[0][j] = 0;
                 }
